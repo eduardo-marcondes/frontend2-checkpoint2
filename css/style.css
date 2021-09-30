@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+* {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-image: url(../media/plant_black_wallpaper.jpg);
+    background-size: cover;
+    height: 88vh;
+    width: 100vw;
+}
+
+
+.fa-trash-alt {
+    color: red;
+}
+.fa-info-circle {
+    color: blue;
+}
+.fa-hourglass-half {
+    color: orange;
+}
+.fa-calendar-alt {
+    color: yellow;
+}
+.todo-body {
+    border-radius: 2em;
+    background-color: #EFF1F2;
+    font-size: 0.85em;
+}
+.todo-input {
+    margin: 1em 0.5em;
+    background-color: white;
+    min-height: 4em;
+    border-radius: 1em;
+    align-items: center;
+}
+.todo-input input {
+    border: none;
+}
+.todo-input input:focus {
+    box-shadow: none;
+}
+.todo-list {
+    align-items: center;
+    min-height: 3em;
+    border-radius: .5em;
+    margin: 1em .15em;
+    background-color: #e9e9e9;
+}
+.date-limit {
+    box-shadow: orange 0 0 .1em .1em;
+    padding: .25em;
+    border-radius: .25em;
+}
+.is-invalid {
+    box-shadow: red 0 0 .1em .1em;
+}
+.form-check-input:checked {
+ box-shadow: green 0 0 .1em .1em;
+ background-color: green;
+ border-color: green;
+}
+.animationList {
+    transition: 1s ease-in-out;
+    transform: rotateX(360deg);
+    background-color: rgba(255, 255, 255, 0.424);
+    text-decoration: line-through;
+}
+h3 a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+h3 a:hover{
+    opacity: 0.9;
+}
+
+.header-nav{
+    width: 100vw;
+    height: 4vh;
+    position:absolute;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+h3 {
+    text-align: right;
+    margin-right: 40px;
+    border-radius: 7px;
+}
+
+.todo-body{
+    margin-top: 4vh;
+}
+
+.todo-body h1 {
+    color: #4158D0 ;
+}

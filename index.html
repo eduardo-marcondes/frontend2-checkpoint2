@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bts/bootstrap.min.css">
+    <!-- Icon fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="media/checked.png">
+    <title>ToDo Cards</title>
+</head>
+
+<body class="container-fluid">
+
+    <header class="row row-cols-md-2">
+        <div class="header-nav">
+            <h3><a href="api.html" target="_blank">Api page</a></h3>
+        </div>
+
+    </header>
+
+    <main class="row row-cols-md-2 mx-1 justify-content-center">
+
+        <div class="col todo-body ">
+
+            <!-- Todo Title -->
+            <div class="row text-center">
+                <h1 class="m-3">My Todo List</h1>
+            </div>
+            <!-- Todo input -->
+            <form class="row todo-input" name="form">
+                <!-- Drop calendar -->
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-calendar-alt"></i>
+                        </button>
+                        <!-- Dropdown menu links -->
+                        <ul class="dropdown-menu">
+                            <!-- date creation -->
+                            <li>
+                                <h6 class="dropdown-header">Data de Criação</h6>
+                            </li>
+                            <li><input type="date" class="dropdown-item" id="date-creation" disabled></li>
+                            <!-- Date limit -->
+                            <li>
+                                <h6 class="dropdown-header">Data de Conclusão</h6>
+                            </li>
+                            <li class="ul-limit"><input type="date" class="dropdown-item" id="input-limit"
+                                    name="datelimit" required></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Input descrição -->
+                <div class="col">
+                    <input type="text" minlength="10" class="form-control" id="task-text" placeholder="Nova tarefa..."
+                        required>
+                </div>
+
+                <!-- Button Add -->
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary" id="create">+</button>
+                </div>
+            </form>
+
+            <!-- Todo lines -->
+            <div class="row todo-list" id="00">
+                <!-- Check Radio -->
+                <div class="col-auto">
+                    <input onclick="animatedList('00')" class="form-check-input" type="checkbox">
+                </div>
+                <!-- Description -->
+                <div class="col text-break">
+                    Entrega Front End Chekpoint II
+                </div>
+                <!-- Date limit -->
+                <div class="col">
+                    <span class="date-limit">
+                        <i class="fas fa-hourglass-half"></i>
+                        28 Set
+                    </span>
+                </div>
+                <!-- Date creation -->
+                <div class="col-auto">
+                    <i class="fas fa-info-circle"></i>
+                    21 Set
+                </div>
+                <!-- Delete Icon -->
+                <div class="col-auto">
+                    <a href="#" onclick="removeList('00')"><i class="fas fa-trash-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/bts/bootstrap.bundle.min.js"></script>
+    <!-- JavaScrip local -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

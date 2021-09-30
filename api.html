@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/bts/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="media/checked.png">
+    <title>Api</title>
+</head>
+
+<body class="container-fluid">
+    <h3 class="m-0"><a href="index.html">Index</a></h3>
+
+    <main class="row row-cols-1 row-cols-md-2">
+        <!-- Todo line test  -->
+        <div class="col">
+            <div class="row todo-list">
+                <!-- Check Radio -->
+                <div class="col-auto">
+                    <input type="checkbox" class="form-check-input">
+                </div>
+                <!-- Description -->
+                <div class="col text-break">
+                    Carregando dados JSON
+                </div>
+                <!-- Date limit -->
+                <div class="col ">
+                    <span>
+                        <i class="fas fa-hourglass-half"></i>
+                        0
+                    </span>
+                </div>
+                <!-- Date creation -->
+                <div class="col-auto">
+                    <i class="fas fa-info-circle"></i>
+                    25 Set
+                </div>
+                <!-- Delete Icon -->
+                <div class="col-auto">
+                    <!-- <i class="fas fa-trash-alt"></i> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <input type="date" class="d-none" id="date-creation">
+    <input type="date" class="d-none" id="date-limit">
+
+    <script src="js/bts/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
